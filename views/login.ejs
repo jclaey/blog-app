@@ -1,0 +1,25 @@
+<% layout('layouts/boilerplate') -%>
+
+<!-- <div class="ui warning message">
+    <i class="close icon"></i>
+    <div class="header">
+        Error
+    </div>
+    <strong><p></p></strong>
+</div> -->
+
+<div class="ui main text container segment" style="margin: 5rem 0;">
+    <div class="ui huge header" style="text-align: center">Login</div>
+
+    <form action="/login" method="POST" class="ui form">
+        <div class="field">
+            <label for="email">Email:</label><br>
+            <input type="text" name="email" placeholder="Email">
+        </div><br>
+        <div class="field">
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" placeholder="Password"></input>
+        </div><br>
+        <button type="submit" class="large teal ui button">Submit</button>
+    </form>
+</div>

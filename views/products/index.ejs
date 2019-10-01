@@ -1,0 +1,28 @@
+<% layout('layouts/boilerplate') -%>
+
+<h1 style="padding-left: 2rem">Welcome To Our Product Page!</h1>
+
+<div class="ui grid" style="margin: 5rem">
+<% products.forEach(function(product) { %>
+    <div class="four wide column" style="display: flex; justify-content: space-between; align-items: baseline">
+        <div class="ui card">
+            <div class="image">
+                <img id="img1" src="<%= product.image %>">
+            </div>
+            <div class="content">
+                <a href="#" class="header"><%= product.title %></a>
+                <div class="meta">
+                    <span class="date">Posted: Current Date</span>
+                </div>
+                <div class="description">
+                    <%= product.description %>
+                </div>
+            </div>
+            <div class="content" style="display: flex; justify-content: space-between; align-items: baseline">
+                <span style="font-size: 1.5rem"><strong><i class="dollar sign icon"></i><%= product.price %></strong></span>
+                <a href="/products/<%= product._id %>" class="large teal ui button">More...</a>
+            </div>
+        </div>
+    </div>
+<% }); %>
+</div>

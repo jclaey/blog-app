@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section#main-showcase {
+    height: 100vh;
+    background: #333 url('../img/typewriter.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+section#main-showcase-inner {
+    position: absolute;
+}

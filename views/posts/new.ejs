@@ -1,0 +1,21 @@
+<% layout('layouts/boilerplate') -%>
+
+<div class="ui main text container segment">
+    <div class="ui huge header" style="text-align: center">Create A New Post</div>
+
+    <form action="/posts" method="POST" class="ui form">
+        <div class="field">
+            <label for="title">Title:</label><br>
+            <input class="ui input focus" type="text" name="title" placeholder="Title goes here...">
+        </div><br>
+        <div class="field">
+            <label for="body">Body:</label><br>
+            <textarea name="body" placeholder="Post body goes here..."></textarea>
+        </div><br>
+        <div class="field">
+            <label for="image">Image URL:</label><br>
+            <input class="ui input focus" type="text" name="image" placeholder="Paste URL here...">
+        </div>
+        <button type="submit" class="large teal ui button">Add Post</button>
+    </form>
+</div>

@@ -1,0 +1,42 @@
+<div class="ui inverted segment" style="margin: 0">
+    <div class="ui inverted pointing huge menu">
+        <i class="fas fa-pepper-hot" style="color: #3BBFB4; font-size: 2.5rem; padding: 0 2rem"></i>
+        <a href="/" class="item">
+            Home
+        </a>
+        <a href="/products" class="item">
+            Products
+        </a>
+        <% if(user) { %>
+        <div class="ui dropdown item">
+            Posts
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <a href="/posts" class="item">
+                    Blog Posts
+                </a>
+                <a href="/posts/new" class="item">
+                    Create Post
+                </a>
+            </div>
+        </div>
+        <% } %>
+        <div class="right menu">
+            <a href="/my-cart" class="item">
+                Cart
+            </a>
+            <% if(!user) { %>
+            <a href="/register" class="item">
+                Register
+            </a>
+            <a href="/login" class="item">
+                Login
+            </a>
+            <% } else { %>
+            <a href="/logout" class="item">
+                Logout
+            </a>
+            <% } %>
+        </div>
+    </div>
+</div>

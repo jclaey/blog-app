@@ -1,0 +1,20 @@
+<% layout('layouts/boilerplate') -%>
+<h2><span style="color: #3BBFB4">Your</span> Cart</h2>
+<% user.cart.forEach(function(item) { %>
+    <div class="ui segment">
+        <h3 class="ui header">
+            <a href="#" class="header"><%= item.title %></a>
+        </h3>
+    <img class="ui small rounded image" src="<%= item.image %>">
+        <p><%= item.description %></p>
+        <p>$<%= item.price %></p>
+        <a href="#" class="ui red button">Delete</a>
+    </div>
+<% }); %>
+<% if(user.cart.length) { %>
+    <div class="container">
+        <a href="#" class="ui green button" id="checkoutBtn">Checkout</a>
+    </div>
+<% } else { %>
+    <h4>You do not have any items in your cart.</h4>
+<% } %>
