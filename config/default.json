@@ -1,5 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://jason:Nh@N5yTwF4cNu76@cluster0-3tafy.mongodb.net/test?retryWrites=true&w=majority",
-    "STRIPE_PUBLISHABLE_KEY":"pk_test_ny3IJHl6kMxT0hTmsG3vphLT00frG4AtEN",
-    "STRIPE_SECRET_KEY":"sk_test_GfvAyMLUvwUnIyATje65XWfs00tVefrQR7"
-}
